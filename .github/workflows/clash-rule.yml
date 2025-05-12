@@ -1,0 +1,34 @@
+name: create clash rule providers
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: create rule providers
+        run: |
+          rm -rf Clash-RuleSet-Classical/*
+          cp -rf *.list Clash-RuleSet-Classical/
+          cd Clash-RuleSet-Classical
+          sed -i "/,/ s/^/  - /" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/#/ s/^/  /" $(ls -l *.list|awk '{print $NF}')
+          sed -i "1i\payload:" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/USER-AGENT/d" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/URL-REGEX/d" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/IP-CIDR/ s/\(.*\),\(.*\),.*/\1,\2/gp" $(ls -l *.list|awk '{print $NF}')
+          for i in $(ls -l *.list|awk '{print $NF}'|awk -F'.' '{print $1}'); do mv $i.list $i.yaml; done
+          git config --global user.email "yangchuansheng33@gmail.com"
+          git config --global user.name "yangchuansheng"
+          git add .
+          git commit -m "update clash rules"
+          git push -u origin main
