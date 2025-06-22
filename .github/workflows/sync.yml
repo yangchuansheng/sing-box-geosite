@@ -8,11 +8,55 @@ on:
     - cron: '0 12 * * *'
 
 jobs:
-  build:
+
+  clash-rules:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Extract domains from ZeroOmega Gist
+        run: |
+          python extract_domains.py
+
+      - name: create rule providers
+        run: |
+          cd customize
+          mkdir -p Clash-RuleSet-Classical
+          rm -rf Clash-RuleSet-Classical/*
+          cp -rf *.list Clash-RuleSet-Classical/
+          cd Clash-RuleSet-Classical
+          sed -i "/,/ s/^/  - /" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/#/ s/^/  /" $(ls -l *.list|awk '{print $NF}')
+          sed -i "1i\payload:" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/USER-AGENT/d" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/URL-REGEX/d" $(ls -l *.list|awk '{print $NF}')
+          sed -i "/IP-CIDR/ s/\(.*\),\(.*\),.*/\1,\2/gp" $(ls -l *.list|awk '{print $NF}')
+          for i in $(ls -l *.list|awk '{print $NF}'|awk -F'.' '{print $1}'); do mv $i.list $i.yaml; done
+          cd ../..
+          git config --global user.email "yangchuansheng33@gmail.com"
+          git config --global user.name "yangchuansheng"
+          git add .
+          git commit -m "update clash rules"
+          git push -u origin main
+  sing-box-rules:
+    runs-on: ubuntu-latest
+    needs: clash-rules
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: "Setup sing-box"
       env:
         SING_BOX_DEB_URL: "https://github.com/SagerNet/sing-box/releases/download/v1.10.0-alpha.27/sing-box_1.10.0-alpha.27_linux_amd64.deb"
@@ -21,7 +65,7 @@ jobs:
           wget -O sing-box.deb $SING_BOX_DEB_URL
           sudo dpkg -i sing-box.deb
     - name: Set up Python3
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: 3.x
     - name: Install dependencies
