@@ -57,6 +57,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Pull latest changes
+      run: |
+        git pull origin main
     - name: "Setup sing-box"
       env:
         SING_BOX_DEB_URL: "https://github.com/SagerNet/sing-box/releases/download/v1.10.0-alpha.27/sing-box_1.10.0-alpha.27_linux_amd64.deb"
@@ -105,5 +110,7 @@ jobs:
           exit 0
         else
           git commit -m "Update rules"
+          # Pull latest changes before pushing to avoid conflicts
+          git pull --rebase origin main
           git push
         fi
