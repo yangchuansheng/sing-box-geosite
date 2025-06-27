@@ -177,6 +177,7 @@
         "gleam.io",
         "gleamjs.io",
         "glitchtip.com",
+        "go-to-zlibrary.com",
         "go.dev",
         "goo.gle",
         "googleapis.com",
@@ -224,6 +225,7 @@
         "kubecost.com",
         "languagereactor.com",
         "learncloudnative.com",
+        "lexile.com",
         "lightstep.com",
         "linkedin.com",
         "linktr.ee",
@@ -376,7 +378,8 @@
         "zencdn.net",
         "zhongzilou.com",
         "zhubai.love",
-        "zlibcdn2.com"
+        "zlibcdn2.com",
+        "zlibrary.st"
       ]
     }
   ],
