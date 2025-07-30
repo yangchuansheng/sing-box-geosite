@@ -406,3 +406,8 @@ payload:
   - DOMAIN-SUFFIX,better-saas.org
   - DOMAIN-SUFFIX,kaneo.app
   - DOMAIN-SUFFIX,oplist.org
+  - DOMAIN-SUFFIX,home-assistant.io
+  - DOMAIN-SUFFIX,n8n.io
+  - DOMAIN-SUFFIX,revmax.tech
+  - DOMAIN-SUFFIX,rocket.chat
+  - DOMAIN-SUFFIX,userway.org
