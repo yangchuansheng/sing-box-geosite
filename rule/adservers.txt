@@ -9,6 +9,8 @@
 !
 !
 !
+||ppcent.org^
+||warp.media.net^
 ||flustered-beer.com^
 ||carbonads.com^$third-party
 ||brightadnetwork.com^
