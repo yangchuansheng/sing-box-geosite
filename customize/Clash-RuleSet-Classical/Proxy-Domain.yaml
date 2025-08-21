@@ -433,3 +433,6 @@ payload:
   - DOMAIN-SUFFIX,casbin.org
   - DOMAIN-SUFFIX,casdoor.org
   - DOMAIN-SUFFIX,iconduck.com
+  - DOMAIN-SUFFIX,growthunhinged.com
+  - DOMAIN-SUFFIX,privatebin.net
+  - DOMAIN-SUFFIX,substackcdn.com
