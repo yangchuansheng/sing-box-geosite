@@ -454,3 +454,10 @@ payload:
   - DOMAIN-SUFFIX,liheiat.xyz
   - DOMAIN-SUFFIX,dayos.com
   - DOMAIN-SUFFIX,earthjustice.org
+  - DOMAIN-SUFFIX,amazon.com
+  - DOMAIN-SUFFIX,clrt.ai
+  - DOMAIN-SUFFIX,codesandbox.io
+  - DOMAIN-SUFFIX,gitpod.io
+  - DOMAIN-SUFFIX,glitch.com
+  - DOMAIN-SUFFIX,saiyashwanth.com
+  - DOMAIN-SUFFIX,youware.app
