@@ -461,3 +461,7 @@ payload:
   - DOMAIN-SUFFIX,glitch.com
   - DOMAIN-SUFFIX,saiyashwanth.com
   - DOMAIN-SUFFIX,youware.app
+  - DOMAIN-SUFFIX,clutch.security
+  - DOMAIN-SUFFIX,statsigapi.net
+  - DOMAIN-SUFFIX,vercel-storage.com
+  - DOMAIN-SUFFIX,vusercontent.net
