@@ -517,3 +517,5 @@ payload:
   - DOMAIN-SUFFIX,koyeb.com
   - DOMAIN-SUFFIX,rustfs.com
   - DOMAIN-SUFFIX,openagents.org
+  - DOMAIN-SUFFIX,open-vsx.org
+  - DOMAIN-SUFFIX,twenty.com
