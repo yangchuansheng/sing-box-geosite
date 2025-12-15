@@ -529,3 +529,6 @@ payload:
   - DOMAIN-SUFFIX,keywordseverywhere.com
   - DOMAIN-SUFFIX,pinecone.io
   - DOMAIN-SUFFIX,boxy-svg.com
+  - DOMAIN-SUFFIX,prompthunt.com
+  - DOMAIN-SUFFIX,sora2watermarkremover.net
+  - DOMAIN-SUFFIX,youmind.com
