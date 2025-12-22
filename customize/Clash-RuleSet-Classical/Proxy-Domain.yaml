@@ -534,3 +534,5 @@ payload:
   - DOMAIN-SUFFIX,youmind.com
   - DOMAIN-SUFFIX,elver.me
   - DOMAIN-SUFFIX,thingiverse.com
+  - DOMAIN-SUFFIX,factory.ai
+  - DOMAIN-SUFFIX,strapi.io
