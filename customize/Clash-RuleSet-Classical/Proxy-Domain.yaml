@@ -536,3 +536,5 @@ payload:
   - DOMAIN-SUFFIX,thingiverse.com
   - DOMAIN-SUFFIX,factory.ai
   - DOMAIN-SUFFIX,strapi.io
+  - DOMAIN-SUFFIX,packify.ai
+  - DOMAIN-SUFFIX,topview.ai
