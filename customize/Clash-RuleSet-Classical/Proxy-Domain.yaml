@@ -545,3 +545,5 @@ payload:
   - DOMAIN-SUFFIX,nvidia.com
   - DOMAIN-SUFFIX,openrouter.ai
   - DOMAIN-SUFFIX,pinzimu.com
+  - DOMAIN-SUFFIX,imgflip.com
+  - DOMAIN-SUFFIX,kapwing.com
