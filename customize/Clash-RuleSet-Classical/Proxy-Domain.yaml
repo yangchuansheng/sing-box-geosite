@@ -557,3 +557,4 @@ payload:
   - DOMAIN-SUFFIX,sealos.app
   - DOMAIN-SUFFIX,clawdhub.com
   - DOMAIN-SUFFIX,moltbook.com
+  - DOMAIN-SUFFIX,openclaw.ai
