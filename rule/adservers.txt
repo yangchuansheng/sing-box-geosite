@@ -9,6 +9,47 @@
 !
 !
 !
+||rvbmvjzymhmai.website^
+||ojfotraqjg.in^
+||promediaspace.my^
+||oycmnim6zckyz8g.rest^
+||x2nmhg9fn3fmtqinimixqr8pbmhpc.cfd^
+||max21.info^
+||gbhozynxmyxos.online^
+||smartytouch.co^
+||ftl5li6yv2x4tio8pum64x.rest^
+||tcufahfu.com^
+||abkzitollpce.com^
+||pointedwoman.com^
+||worriedcup.com^
+||harmful-comparison.com^
+||liquid-student.com^
+||plain-plane.com^
+||nvh1mgp8k77cu2935zwczqfezrr.cfd^
+||unfurlsburgesshalvas.qpon^
+||64gkf7zhlwqn6y4eutgq1hjjo9y.rest^
+||lakollsukj.com^
+||bogustrouble.com^
+||8c66b76e9b.com^
+||phoneupstandingcatholic.com^
+||aufas.com^
+||atytentioniaukmla.org^
+||d1j5bhx6uel4km.cloudfront.net^
+||frugraoqlo.com^
+||pahter.tech^
+||pahtuo.tech^
+||pahtuz.tech^
+||pahtlf.tech^
+||pahtsx.tech^
+||pahtbt.tech^
+||adbkacpmu.com^
+||lepidpomps.com^
+||ejretpiytkcna.website^$all
+||typicallyuncovernull.com^
+||improbablehospital.com^
+||zstnzufw.com^
+||xbarbppqv.com^
+||wittyinternet.com^
 ||d33f51dyacx7bd.cloudfront.net^
 ||cloudscape84.net^
 ||kcwcohcmsotlsyn.com^
@@ -786,11 +827,6 @@
 ! Required for apps, because on some sites it's not blocked when there is "$third-party" modifier
 ||netpub.media^
 !
-! https://github.com/AdguardTeam/AdguardFilters/issues/216276
-! Suspicious fake players
-185.246.188.125$network
-185.246.188.124$network
-!
 ! https://github.com/AdguardTeam/AdguardFilters/issues/201620
 154.199.255.184$network
 !
@@ -888,11 +924,6 @@
 !
 ! https://github.com/AdguardTeam/AdguardFilters/issues/31688
 @@||amgload.net/z|$domain=sinoptik.ua|gismeteo.ua
-!
-!#if (adguard_ext_safari || adguard_app_ios || adguard_ext_android_cb)
-||analyticsq.com^
-||d71e6dd31a026d45.com$popup
-!#endif
 !
 ! https://github.com/AdguardTeam/AdGuardHome/issues/1046
 ||samsungtvads.com^
