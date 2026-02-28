@@ -562,3 +562,4 @@ payload:
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,nodered.org
   - DOMAIN-SUFFIX,woocommerce.com
+  - DOMAIN-SUFFIX,supabase.com
