@@ -9,6 +9,32 @@
 !
 !
 !
+||abdalminhag.com^
+||acquaintjokinglyscoring.com^
+||fhpxjbryxqwoak.com^
+||aikhiwnpdff.com^
+||satisfiednews.com^
+||acceptancedishearten.com^
+||broadlyjukeboxunrevised.com^
+||eruptpriority.com^
+||lightindividual.com^
+||kjfmvnuri.click^$all
+||nmxcvnue.it.com^
+||jfvnerukf.it.com^
+||cylindrical-suggestion.com^
+||zealousimage.com^
+||cafflekiloton.com^
+||boreconcoursesentence.com^
+||fairscrew.com^
+||navxixxz.in^
+||ktinalzpiak.in^
+||host69k.cfd^$all
+||t.easywebland.my^
+||clladss.com^$all
+||ofbtrorzo.in^
+||host57k.cfd^
+||druggedrat.com^$all
+||attacheatableoverlabor.com^
 ||zqbgk89wxtf192wu8wecmoimrncmey9bi4b52vf.cfd^
 ||whwdxzadairoq.website^
 ||3n2nc158v6u5hv6o.cfd^
@@ -946,6 +972,12 @@
 ! https://github.com/AdguardTeam/FiltersRegistry/pull/937
 ! To fix the issue with the CNAME trackers, add problematic domains here:
 ! https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/exclusions.txt
+!
+!
+! Dangerous sites in ads / Fake captcha
+||midnightlotusgrove.com^
+! TODO: enable the directive when https://github.com/AdguardTeam/cname-trackers/issues/127 will be ready
+! include https://adguardteam.github.io/cname-trackers/data/ads/midnightlotusgrove.txt
 !
 ! Galaksion: beixisys.com disguised advertising networks
 !#include https://adguardteam.github.io/cname-trackers/data/ads/galaksion.txt
