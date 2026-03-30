@@ -9,6 +9,8 @@
 !
 !
 !
+||ad-blocker-1.static-cloudflare.workers.dev^
+||traumatic-witness.pro^
 ||quizzicalrun.com^
 ||doorknockset.com^
 ||adplsr.com^
