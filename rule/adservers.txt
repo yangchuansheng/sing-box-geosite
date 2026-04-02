@@ -9,6 +9,11 @@
 !
 !
 !
+||botanyreadersettlement.com^
+||aznude.workers.dev^
+||advolve.io^
+||gggpppht.com^
+||ember-cf-netlify.cdn-x.net^
 ||ad-blocker-1.static-cloudflare.workers.dev^
 ||traumatic-witness.pro^
 ||quizzicalrun.com^
@@ -775,7 +780,7 @@
 ||webinstats.com^$third-party
 ||localbitcoins.com^$third-party
 ||qwfh39851jtfvkurf21hf.com^
-||onaudience.com^$third-party
+||onaudience.com^
 ||ichlnk.com^$third-party
 ||plxnt.com^$third-party
 ||ad-specs.guoshipartners.com^
@@ -876,6 +881,8 @@
 ||vipads.live^
 !+ NOT_OPTIMIZED
 ||api.smartnews-ads.com^
+! Ads in emails
+ad.broadstreetads.com
 ! Required for apps, because on some sites it's not blocked when there is "$third-party" modifier
 ||netpub.media^
 !
